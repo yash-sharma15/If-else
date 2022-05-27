@@ -1,0 +1,54 @@
+#1..WAP to Check if a Number is Positive, Negative or 0
+num=float(input())
+if num>0:
+   print("Positive number")
+elif num==0:
+   print("Zero")
+else:
+   print("Negative number")
+#2..Python Program to Check if a Number is Odd or Even using bitwise and if
+#i)using bitwise
+n=int(input())
+if(n&1==0):
+    print("even")
+else:
+    print("odd")
+#ii)using if else
+n=int(input())
+if (n%2)==0:
+   print("no is even")
+else:
+   print("no is odd")
+#3..WAP to Check character is Vowel or Consonant
+ch=input()
+if(ch=='A' or ch=='a' or ch=='E' or ch =='e' or ch=='I'or ch=='i' or ch=='O' or ch=='o' or ch=='U' or ch=='u'):
+    print("Vowel")
+else:
+    print("Consonant")
+#4.. WAP to find the largest number among the three input numbers
+a=int(input())
+b=int(input())
+c=int(input())
+if (a>=b) and (a>=c):
+   largest=a
+elif (b>=a) and (b>=c):
+   largest=b
+else:
+   largest=c
+print(largest)
+#5..WAP to sort 3 numbers 
+a=int(input())
+b=int(input())
+c=int(input())
+a1=min(a,b,c)
+a3=max(a,b,c)
+a2=(a+b+c)-a1-a3
+print(a1,a2,a3)
+#6..WAP to check whether triangle is valid or not if sides are given
+a=int(input())
+b=int(input())
+c=int(input())
+if (a+b<=c) or (a+c<=b) or (b+c<=a) :
+    print("triangle is invalid")
+else:
+    print("triangle is valid")
